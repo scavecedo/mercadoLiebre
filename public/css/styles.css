@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.encabezado {
+    background-color: #EAC926;
+}
+
+.encabezado__logo{
+    width: 50%;
+    padding: 20px;
+}
+.padreBarraBusqueda{
+    padding: 20px;
+}
+.barraBusqueda{
+    width: 50%;
+}
+.navbar__listashop,
+.navbar__listauser{
+    list-style-type:none;
+    padding: 0;    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.textocompra{
+    text-align: center;
+}
+.navbar__burger-menu {
+    display:flex;
+    justify-content: center;
+}
+
+.burger-menu{
+    text-align: center;
+    display:inline-block;
+    color: white;
+    background-color: #03264C;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+
+.encabezado__banner{
+    width: 100%;
+}
+
+main{
+    background-color: #ebebeb;
+}
+
+.seccionProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seccionProductos__titulo{
+    font-size: 24px;
+}
+
+
+
+.producto__precio{
+    font-size: 18px;
+}
+
+.producto__descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+.producto__descripcion{
+    font-size: 16px;
+}
+
+.producto__imagen{
+    width: 100%;
+    padding: 20px;
+}
+
+.pie{
+    color: #666;
+    text-align: center;
+}
+
+.pie__tarjeta,
+.pie__envio,
+.pie__seguridad{
+    padding: 20px 80px;
+}
+
+.tarjeta__icono,
+.envio__icono,
+.seguridad__icono{
+    color: #03264C;
+    font-size: 36px;
+    margin: 0;
+}
+
+.tarjeta__titulo,
+.envio__titulo,
+.seguridad__titulo{
+    font-size: 24px;
+    margin: 0px;
+}
+
+.pie__copyright{
+    text-align: left;
+    margin: 20px;
+}
