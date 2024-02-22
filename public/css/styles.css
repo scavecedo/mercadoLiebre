@@ -10,6 +10,8 @@ body {
 
 .encabezado {
     background-color: #EAC926;
+    display: flex;
+    justify-content: center;
 }
 
 .encabezado__top{
@@ -246,5 +248,8 @@ main{
     }
     .pie {
         width: 1200px;
+    }
+    .encabezado{
+        width: 100%;
     }
 }

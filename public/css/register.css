@@ -1,0 +1,10 @@
+.encabezado{
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .contenedor-logo{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
