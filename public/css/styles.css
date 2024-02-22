@@ -12,18 +12,27 @@ body {
     background-color: #EAC926;
 }
 
-.encabezado__logo{
-    width: 50%;
-    padding: 20px;
+.encabezado__top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.encabezado__logo{
+    width: 50%;
+    max-width: 290px;
+    padding: 30px 10px;
+}
 
 .padreBarraBusqueda{
-    padding: 0px 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .barraBusqueda{
-    width: 50%;
+    width: 80%;
 }
 
 .search__boton{
@@ -69,7 +78,6 @@ a {
 main{
     width: 90%;
     margin: auto;
-
 }
 
 .seccionProductos{
@@ -97,6 +105,7 @@ main{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     
 }
 
@@ -140,6 +149,7 @@ main{
 .pie{
     text-align: center;
     background-color: white;
+    
 }
 
 .pie__tarjeta,
@@ -168,26 +178,73 @@ main{
     margin: 20px;
 }
 
+.encabezado__top,
+.navbar,
+.encabezado__banner,
+.cuerpo,
+.pie__copyright,
+.pie__envio,
+.pie__seguridad,
+.pie__tarjeta{
+    max-width: 1200px;
+}
+
 @media (min-width: 361px){
     .producto__descripcion{
         display: block;
     }
-    .navbar__listashop,
-    .navbar__listauser{
-        display: block;
-    }
-    .navbar__burger-menu{
-        display: none;
-    }
+
     .seccionProductos__producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 46%;
     }
+    .producto__descuento{
+        text-align: right;
+    }
 }
 
 @media (min-width: 769px){
+    .encabezado__top{
+        flex-wrap: nowrap;
+    }
     .seccionProductos__producto{
         width: 23%;
     }
+    .textoCompra{
+        width: 30%;
+    }
+    .padreBarraBusqueda{
+        width: 40%;
+        max-width: 330px;
+    }
+    .navbar,
+    .navbar__listashop,
+    .navbar__listauser{
+        display: flex;
+    }
 
+    .navbar {
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+    .listashop__link,
+    .listauser__link{
+        margin: 0px 10px;
+    }
+
+    .navbar__burger-menu{
+        display: none;
+    }
+
+}
+@media (min-width: 1200px){
+    body{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pie {
+        width: 1200px;
+    }
 }
