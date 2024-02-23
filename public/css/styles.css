@@ -13,7 +13,9 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.subEncabezado{
+    width: 100%;
+}
 .encabezado__top{
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +88,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: stretch;
 }
 
 .seccionProductos__producto{
@@ -124,7 +127,13 @@ main{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 500ms;
 }
+
+.fa-truck:hover{
+    transform: rotate(-0.25turn);
+}
+    
 
 .producto__precio{
     font-size: 18px;
@@ -179,7 +188,7 @@ main{
     text-align: left;
     margin: 20px;
 }
-
+.subEncabezado,
 .encabezado__top,
 .navbar,
 .encabezado__banner,
@@ -190,14 +199,17 @@ main{
 .pie__tarjeta{
     max-width: 1200px;
 }
-
-@media (min-width: 361px){
+.seccionProductos__producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     .producto__descripcion{
         display: block;
     }
+}
+
+
+@media (min-width: 361px){
 
     .seccionProductos__producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 46%;
     }
     .producto__descuento{
@@ -238,6 +250,29 @@ main{
     .navbar__burger-menu{
         display: none;
     }
+    .pie__secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .pie__envio,
+    .pie__seguridad,
+    .pie__tarjeta{
+        width: 30%;
+    }
+
+    .fa-credit-card,
+    .fa-gift,
+    .fa-user-shield{
+        transition: color 200ms;
+    }
+
+    .fa-credit-card:hover,
+    .fa-gift:hover,
+    .fa-user-shield:hover{
+        color: blue;
+    }
+
 
 }
 @media (min-width: 1200px){

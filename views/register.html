@@ -19,13 +19,28 @@
         </div>
     </header>
     <main class="cuerpo">
-        <form action="" method="post">
-            <label>Nombre y Apellido <input type="text" name="nombre"></label>
-            <label>Nombre de usuari@ <input type="text" name="usuario"></label>
-            <label>Email <input type="email" name="email"></label>
-            <label>Fecha de Nacimiento <input type="date" name="fechaNacimiento"></label>
-            <label>Domicilio <input type="text" name="domicilio"></label>
-        </form>
+        <section class="formulario">
+            <form action="/" method="get">
+                <p class="formulario__item"><label>Nombre y Apellido </p><p><input type="text" name="nombre" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Nombre de usuari@ </p><p><input type="text" name="usuario" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Email </p><p><input type="email" name="email" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Fecha de Nacimiento</p><p><input type="date" name="fechaNacimiento" class="fecha"></label></p>
+                <p class="formulario__item"><label>Domicilio </p><p><input type="text" name="domicilio" class="caja-texto"></label></p>
+                <p class="formulario__item"><label for="perfil">Querés comprar o vender?</label></p>
+                <p class="formulario__item"><input type="radio" name="perfil" value="vender"> Vender</p>
+                <p class="formulario__item"><input type="radio" name="perfil" value="Comprar"> Comprar</p>
+                <p class="formulario__item"><label for="intereses">Seleccioná tus categorías de interés</label></p>
+                <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="electro"> Electro</p>
+                <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="moda"> Moda</p>
+                <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="hogar"> Hogar</p>
+                <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="juguetes"> Juguetería</p>
+                <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="vidaSana"> Vida Sana</p>
+                <p class="formulario__item"><label>Subí tu foto de perfil </p><p><input type="file" name="fotoUser" id="fotoUsuario" class="boton-foto"></label></p>
+                <p class="formulario__item"><label>Contraseña </p><p><input type="password" name="password" id="password" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Confirmar contraseña </p><p><input type="password" name="passwordCheck" id="passwordCheck" class="caja-texto"></label></p>
+                <p class="formulario__item"><button type="submit" class="boton-enviar boton">Enviar</button><button type="reset" class="boton-borrar boton">Borrar</button></p>
+            </form>
+        </section>
     </main>
 </body>
 </html>
