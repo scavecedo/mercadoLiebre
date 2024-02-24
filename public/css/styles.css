@@ -264,7 +264,7 @@ main{
     .fa-credit-card,
     .fa-gift,
     .fa-user-shield{
-        transition: color 200ms;
+        transition: color 300ms;
     }
 
     .fa-credit-card:hover,

@@ -21,10 +21,11 @@
     <main class="cuerpo">
         <section class="formulario">
             <form action="/" method="get">
-                <p class="formulario__item"><label>Nombre y Apellido </p><p><input type="text" name="nombre" class="caja-texto"></label></p>
-                <p class="formulario__item"><label>Nombre de usuari@ </p><p><input type="text" name="usuario" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Nombre y Apellido </p><p><input type="text" name="nombre" minlength="2" class="caja-texto"></label></p>
+                <p class="formulario__item"><label>Nombre de usuari@ </p><p><input type="text" name="usuario" minlength="2" class="caja-texto"></label></p>
                 <p class="formulario__item"><label>Email </p><p><input type="email" name="email" class="caja-texto"></label></p>
-                <p class="formulario__item"><label>Fecha de Nacimiento</p><p><input type="date" name="fechaNacimiento" class="fecha"></label></p>
+                <p class="formulario__item"><label>Fecha de Nacimiento</p>
+                    <p><input type="date" name="fechaNacimiento" class="fecha"></label></p>
                 <p class="formulario__item"><label>Domicilio </p><p><input type="text" name="domicilio" class="caja-texto"></label></p>
                 <p class="formulario__item"><label for="perfil">Querés comprar o vender?</label></p>
                 <p class="formulario__item"><input type="radio" name="perfil" value="vender"> Vender</p>
@@ -35,10 +36,12 @@
                 <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="hogar"> Hogar</p>
                 <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="juguetes"> Juguetería</p>
                 <p class="formulario__item"><input type="checkbox" name="intereses" id="intereses" value="vidaSana"> Vida Sana</p>
-                <p class="formulario__item"><label>Subí tu foto de perfil </p><p><input type="file" name="fotoUser" id="fotoUsuario" class="boton-foto"></label></p>
+                <p class="formulario__item"><label>Subí tu foto de perfil </p>
+                    <p><input type="file" name="fotoUser" id="fotoUsuario" accept=".jpg,.png,.bmp" class="boton-foto"></label></p>
                 <p class="formulario__item"><label>Contraseña </p><p><input type="password" name="password" id="password" class="caja-texto"></label></p>
                 <p class="formulario__item"><label>Confirmar contraseña </p><p><input type="password" name="passwordCheck" id="passwordCheck" class="caja-texto"></label></p>
-                <p class="formulario__item"><button type="submit" class="boton-enviar boton">Enviar</button><button type="reset" class="boton-borrar boton">Borrar</button></p>
+                <p class="formulario__item"><button type="submit" class="boton-enviar boton">Enviar</button>
+                    <button type="reset" class="boton-borrar boton">Borrar</button></p>
             </form>
         </section>
     </main>
